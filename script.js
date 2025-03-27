@@ -47,10 +47,11 @@ buttons.forEach((button) => {
     }
     // Handle number and decimal buttons
     else {
-      currentInput += value; // Append the value to the current input
+      if (value === "." && currentInput.includes(".")) return; // Prevent multiple decimals
+      currentInput += value;
       screen.value = operator
         ? `${previousValue} ${getOperatorSymbol(operator)} ${currentInput}`
-        : currentInput; // Update the screen
+        : currentInput;
     }
   });
 });
