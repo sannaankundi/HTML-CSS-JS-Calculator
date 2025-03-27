@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <!-- Input Screen -->
+      <div class="input-box">
+        <input type="text" id="calculator-screen" readonly />
+      </div>
+    </section>
+    <section>
+      <!-- Buttons -->
+      <div class="buttons">
+        <!-- Row 1: Numbers -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn operator" data-value="/">÷</button>
+
+        <!-- Row 2: Numbers -->
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn operator" data-value="*">×</button>
+
+        <!-- Row 3: Numbers -->
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn operator" data-value="-">−</button>
+
+        <!-- Row 4: Actions -->
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn action" id="clear">C</button>
+        <button class="btn operator" data-value="+">+</button>
+
+        <!-- Row 5: Equals -->
+        <button class="btn action" id="equals">=</button>
+      </div>
+    </section>
+  </body>
+</html>
